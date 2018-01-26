@@ -1,0 +1,12 @@
+{
+    "require": {
+        "twig/twig": "^1.35",
+        "econea/nusoap": "v0.9.5.4",
+        "phpunit/phpunit": "^5.7"
+    },
+ "autoload": {
+    "classmap": [
+      "Palindrome.php"
+    ]
+}
+}

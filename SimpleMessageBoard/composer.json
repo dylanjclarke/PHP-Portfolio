@@ -1,0 +1,11 @@
+{
+    "require": {
+        "twig/twig": "~1.0",
+        "phpunit/phpunit": "^5.7"
+    },
+	"autoload": {
+    "classmap": [
+      "SimpleMessageBoard.php"
+    ]}
+	
+}

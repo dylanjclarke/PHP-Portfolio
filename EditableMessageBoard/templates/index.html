@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Editable Message Board</title>
+<link rel="stylesheet" href="./css/mainstyle.css">
+    </head>
+    <body>
+    <h1 id="maintitle"> Editable Message Board </h1>
+
+        <div id = "maintext">
+        {% for item in messages %}
+            <p>{{ item.id }}:{{ item.text }} {% if userid == item.userid %} <a href ="./edit.php?messageid={{item.id}}">Edit</a> {% endif  %}  </p>
+        {% endfor %}
+        </div>
+{% if loggedin == true %}
+<form id="simpleform" action="./index.php" method="POST">
+<p><textarea name="message"></textarea></p>
+
+<p><button type="submit">Post message</button></p>
+</form>
+{% else %}
+<div id="simpleform">
+<a href = "{{authurl}}">Log in to comment</a>
+</div>
+{% endif %}
+<form id="simpleform" action="./index.php" method="POST">
+<button type="submit">Refresh</button>
+</form>
+    </body>
+</html>

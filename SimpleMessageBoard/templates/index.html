@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Message Board</title>
+<link rel="stylesheet" href="./css/mainstyle.css">
+    </head>
+    <body>
+    <h1 id="maintitle"> Simple Message Board </h1>
+
+        <div id="maintext">
+        {% for item in messages %}
+            <p>{{ item.id }}:{{ item.text }}</p>
+        {% endfor %}
+</div>
+<div id="simpleform">
+<form action="./index.php" method="POST">
+<p><textarea name="message"></textarea></p>
+
+<p><button type="submit">Post message</button></p>
+</form>
+<form action<form action="./index.php" method="POST">
+<button type="submit">Refresh</button>
+</form>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,10 @@
+{
+    "require": {
+        "twig/twig": "~1.0",
+    "google/apiclient": "^2.0",
+        "phpunit/phpunit": "^5.7" 
+   }, "autoload": {
+    "classmap": [
+      "EditableMessageBoard.php"
+    ]}
+}

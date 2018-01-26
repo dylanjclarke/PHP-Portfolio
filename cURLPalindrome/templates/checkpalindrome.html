@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/mainstyle.css">
+  <title>Palindrome Checker</title>
+</head>
+<body>
+<h1 id="maintitle">
+Palindrome Checker
+</h1>
+<div id="maintext">
+<div id ="responsetext">
+{% if palindromesubmitted == true %}
+{{text}} is {% if ispalindrome == false %}not {% endif %}a palindrome. 
+{% else %}
+<p>No palindrome submitted for checking.
+{% endif %}
+</div>
+</div>
+</body>
+</html>

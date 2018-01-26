@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Editable Message Board</title>
+<link rel="stylesheet" href="./css/mainstyle.css">
+    </head>
+    <body>
+{% if correctuser == true %}
+
+    <h1 id="maintitle"> Editable Message Board </h1>
+   <div id = "maintext">
+        
+        {% for item in messages %}
+            <p>{{ item.id }}:{{ item.text }} {% if userid == item.userid %}Edit {% endif  %}  </p>
+        {% endfor %}
+        
+<form action="./edit.php" method="POST">
+<p><textarea name="message">{{ message }}</textarea></p>
+<input type="hidden" name = "messageid" value="{{ messageid }}">
+<p><button type="submit">Update message</button></p>
+</form>
+</div>
+{% else %}
+<h1 id ="maintitle"> Permission Denied</h1>
+<div id="maintext">
+<p>This message is not editable by the current user.</p>
+</div>
+{% endif %}
+    </body>
+</html>
