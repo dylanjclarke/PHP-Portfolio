@@ -1,0 +1,15 @@
+Programming Portfolio - Dylan Clarke
+
+This portfolio is designed to allow colleagues and employers to easily find evidence of my programming skills and the strategies and techniques I can use to address a range of problems. It contains relatively simple projects that demonstrate my mastery of fundamental technologies and best practices. This allows the reader to easily select a project that will enable them to assess my ability with a particular technology or technique, with the minimum of extra code to understand.
+
+Palindrome Checker (PHP/REST web service): This project consists of two components. The first is a REST web service written in PHP which returns a JSON object indicating whether the parameter passed to it in a GET request is a palindrome or not. The second is a web page written in HTML5/CSS/JavaScript which enables the user to enter a string, and then sends this string to the web service using AJAX and informs the user of whether the string is a palindrome or not.
+This project demonstrates my ability to write correct HTML5 and CSS, to use AJAX, to work with JSON, to write good quality PHP code and to correctly design algorithms to solve programming problems. It also demonstrates my ability to write unit tests with PHPUNIT and to design an appropriate testing strategy.
+
+Simple Message Board (PHP and MySQL application): This project provides users with a simple message board page on which they can read previous messages and add messages of their own. It demonstrates my ability to design SQL database schemas and to correctly and securely interact with a MySQL database from PHP (alongside fundamental PHP, HTML and CSS and testing skills demonstrated in the previous project). It also demonstrates my ability to mock database connections when unit testing.
+
+Editable Message Board (PHP and MySQL application): This project extends the previous project to require users to log in using OAuth, tagging messages with their user name, and allowing them to later edit these messages. This project demonstrates my ability to use OAuth and to design more complex applications, as well as testing more complex code.
+
+cURL Palindrome Checker (PHP/REST web service): This project consists of three components. The first is a REST web service written in PHP which returns a JSON object indicating whether the parameter passed to it in a GET request is a palindrome or not. The second is a web page written in HTML5/CSS which enables the user to enter a string and sends this to the third component via a GET request. The third component is a PHP page which interacts with the REST web service using cURL to send http requests, and then informs the user of whether the string is a palindrome or not. 
+This project demonstrates the skills shown earlier and the use of cURL.
+
+SOAP Palindrome Checker (PHP SOAP web service): This project is similar to the previous project, except that a SOAP web service and client are used. This project demonstrates my ability to work with SOAP web services.
